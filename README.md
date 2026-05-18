@@ -129,9 +129,11 @@ uniride/
 - José Batista Neto
 - Letícia Sá Oliveira
 - Lucas Vinicius Silva dos Santos
+- Laís Neves Dutra dos Santos
 - André Ricardo Costa da Silva
 - Lucas Viana de Oliveira
 - Thamires Anjos Ferreira
+
 
 **Professor orientador:** Anderson Clayton Garcia Lopes
 
