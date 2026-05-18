@@ -133,6 +133,7 @@ uniride/
 - Lucas Viana de Oliveira
 - Thamires Anjos Ferreira
 - Laís Neves Dutra dos Santos
+- Leonardo dos Santos Freire
 
 **Professor orientador:** Anderson Clayton Garcia Lopes
 
