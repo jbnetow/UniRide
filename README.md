@@ -127,6 +127,7 @@ uniride/
 ## Equipe
 
 - José Batista Neto
+- Letícia Sá Oliveira
 
 **Professor orientador:** Anderson Clayton Garcia Lopes
 
