@@ -65,7 +65,7 @@ A ideia é ajudar os estudantes a economizar dinheiro com transporte, reduzir o 
 Clone este repositório ou baixe como ZIP:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/uniride.git
+git clone https://github.com/SEU-USUARIO/UniRide.git
 ```
 
 **2. Coloque a pasta no XAMPP**
