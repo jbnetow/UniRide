@@ -131,6 +131,7 @@ uniride/
 - Lucas Vinicius Silva dos Santos
 - André Ricardo Costa da Silva
 - Lucas Viana de Oliveira
+- Thamires Anjos Ferreira
 
 **Professor orientador:** Anderson Clayton Garcia Lopes
 
