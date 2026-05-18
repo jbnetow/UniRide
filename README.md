@@ -20,7 +20,7 @@ A ideia é ajudar os estudantes a economizar dinheiro com transporte, reduzir o 
 
 ---
 
-## Funcionalidades
+## Funcionalidades do UniRide
 
 **Para qualquer usuário:**
 - Cadastro e login com e-mail institucional
@@ -130,6 +130,10 @@ uniride/
 - Letícia Sá Oliveira
 - Lucas Vinicius Silva dos Santos
 - Laís Neves Dutra dos Santos
+- André Ricardo Costa da Silva
+- Lucas Viana de Oliveira
+- Thamires Anjos Ferreira
+
 
 **Professor orientador:** Anderson Clayton Garcia Lopes
 
