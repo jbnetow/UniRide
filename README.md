@@ -16,7 +16,7 @@ A ideia é ajudar os estudantes a economizar dinheiro com transporte, reduzir o 
 
 ## Demonstração
 
-▶ Vídeo de demonstração: *[link aqui após upload]*
+▶ Vídeo de demonstração: https://www.youtube.com/watch?v=XHwiBwp6ki4
 
 ---
 
