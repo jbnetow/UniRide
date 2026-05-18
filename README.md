@@ -20,7 +20,7 @@ A ideia é ajudar os estudantes a economizar dinheiro com transporte, reduzir o 
 
 ---
 
-## Funcionalidades
+## Funcionalidades do UniRide
 
 **Para qualquer usuário:**
 - Cadastro e login com e-mail institucional
