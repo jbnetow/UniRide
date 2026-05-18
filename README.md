@@ -128,6 +128,7 @@ uniride/
 
 - José Batista Neto
 - Letícia Sá Oliveira
+- Lucas Vinicius Silva dos Santos
 
 **Professor orientador:** Anderson Clayton Garcia Lopes
 
