@@ -1,0 +1,535 @@
+/* =====================================================
+   UniRide - Folha de Estilos Global
+   Projeto Integrador SENAC - 2026
+   Identidade visual: minimalista, tipografia serifada,
+   botões azul vibrante (referência: imagens fornecidas).
+===================================================== */
+
+/* ---------- Reset básico ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- Variáveis de cor ---------- */
+:root {
+    --azul-primario: #0066FF;
+    --azul-hover: #0052CC;
+    --azul-escuro: #1A3A6B;
+    --cinza-borda: #D0D0D0;
+    --cinza-claro: #F5F5F5;
+    --cinza-texto: #666666;
+    --cinza-placeholder: #999999;
+    --preto: #111111;
+    --branco: #FFFFFF;
+    --verde-sucesso: #2E7D32;
+    --verde-bg: #E8F5E9;
+    --vermelho-erro: #C62828;
+    --vermelho-bg: #FFEBEE;
+    --amarelo-aviso: #F57F17;
+    --amarelo-bg: #FFF8E1;
+}
+
+/* ---------- Base ---------- */
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: var(--branco);
+    color: var(--preto);
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 30px;
+}
+
+/* ---------- Tipografia ---------- */
+h1, h2, h3, h4 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-weight: bold;
+    color: var(--preto);
+    margin-bottom: 20px;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.6rem; margin-top: 10px; }
+h3 { font-size: 1.3rem; }
+
+p { margin-bottom: 12px; }
+
+a {
+    color: var(--azul-primario);
+    text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+/* ---------- Cabeçalho (navegação) ---------- */
+.site-header {
+    background-color: var(--branco);
+    border-bottom: 1px solid var(--cinza-borda);
+    padding: 16px 30px;
+}
+
+.site-header .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header .logo {
+    font-family: 'Georgia', serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--preto);
+}
+
+.site-header .logo span {
+    color: var(--azul-primario);
+}
+
+.site-header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.site-header nav a {
+    color: var(--preto);
+    font-size: 1rem;
+    padding: 6px 4px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.15s;
+}
+
+.site-header nav a:hover,
+.site-header nav a.ativo {
+    border-bottom-color: var(--azul-primario);
+    text-decoration: none;
+}
+
+.site-header .user-info {
+    font-size: 0.95rem;
+    color: var(--cinza-texto);
+}
+
+/* ---------- Rodapé ---------- */
+.site-footer {
+    background-color: var(--cinza-claro);
+    color: var(--cinza-texto);
+    text-align: center;
+    padding: 16px 30px;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--cinza-borda);
+}
+
+/* ---------- Containers de formulário centralizado (login/cadastro) ---------- */
+.form-centralizado {
+    max-width: 560px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.form-centralizado h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* ---------- Formulários ---------- */
+.form-grupo {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+    color: var(--preto);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 1rem;
+    border: 1px solid var(--cinza-borda);
+    border-radius: 8px;
+    background-color: var(--branco);
+    color: var(--preto);
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--azul-primario);
+    box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.15);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--cinza-placeholder);
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+/* Linhas com dois campos lado a lado */
+.form-linha {
+    display: flex;
+    gap: 16px;
+}
+.form-linha .form-grupo {
+    flex: 1;
+}
+
+/* ---------- Botões ---------- */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.15s, transform 0.05s;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-primario {
+    background-color: var(--azul-primario);
+    color: var(--branco);
+    width: 100%;
+}
+
+.btn-primario:hover {
+    background-color: var(--azul-hover);
+    text-decoration: none;
+}
+
+.btn-secundario {
+    background-color: var(--cinza-claro);
+    color: var(--preto);
+    border: 1px solid var(--cinza-borda);
+}
+
+.btn-secundario:hover {
+    background-color: #E8E8E8;
+    text-decoration: none;
+}
+
+.btn-perigo {
+    background-color: var(--vermelho-erro);
+    color: var(--branco);
+}
+
+.btn-perigo:hover {
+    background-color: #A01D1D;
+    text-decoration: none;
+}
+
+.btn-sucesso {
+    background-color: var(--verde-sucesso);
+    color: var(--branco);
+}
+
+.btn-sucesso:hover {
+    background-color: #1B5E20;
+    text-decoration: none;
+}
+
+.btn-sm {
+    padding: 6px 14px;
+    font-size: 0.9rem;
+}
+
+.btn-link-rodape {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 0.95rem;
+}
+
+/* ---------- Mensagens de feedback ---------- */
+.mensagem {
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.mensagem-sucesso {
+    background-color: var(--verde-bg);
+    color: var(--verde-sucesso);
+    border-left: 4px solid var(--verde-sucesso);
+}
+
+.mensagem-erro {
+    background-color: var(--vermelho-bg);
+    color: var(--vermelho-erro);
+    border-left: 4px solid var(--vermelho-erro);
+}
+
+.mensagem-aviso {
+    background-color: var(--amarelo-bg);
+    color: var(--amarelo-aviso);
+    border-left: 4px solid var(--amarelo-aviso);
+}
+
+/* ---------- Cards de carona ---------- */
+.lista-caronas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.card-carona {
+    border: 1px solid var(--cinza-borda);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--branco);
+    transition: box-shadow 0.15s;
+}
+
+.card-carona:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.card-carona .rota {
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.card-carona .rota .seta {
+    color: var(--azul-primario);
+    margin: 0 8px;
+}
+
+.card-carona .info-linha {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    color: var(--cinza-texto);
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.card-carona .info-linha .item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.card-carona .acoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+/* ---------- Badge de status ---------- */
+.badge {
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+.badge-ativa     { background: #E3F2FD; color: #0D47A1; }
+.badge-concluida { background: var(--verde-bg); color: var(--verde-sucesso); }
+.badge-cancelada { background: var(--vermelho-bg); color: var(--vermelho-erro); }
+.badge-pendente  { background: var(--amarelo-bg); color: var(--amarelo-aviso); }
+.badge-aceita    { background: var(--verde-bg); color: var(--verde-sucesso); }
+.badge-recusada  { background: var(--vermelho-bg); color: var(--vermelho-erro); }
+
+/* ---------- Dashboard ---------- */
+.dashboard-saudacao {
+    margin-bottom: 30px;
+}
+.dashboard-saudacao h1 {
+    margin-bottom: 6px;
+}
+.dashboard-saudacao p {
+    color: var(--cinza-texto);
+}
+
+.cards-resumo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-bottom: 40px;
+}
+
+.card-resumo {
+    border: 1px solid var(--cinza-borda);
+    border-radius: 10px;
+    padding: 22px;
+    background: var(--branco);
+}
+
+.card-resumo .numero {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--azul-primario);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.card-resumo .label {
+    color: var(--cinza-texto);
+    font-size: 0.95rem;
+}
+
+.acoes-rapidas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+/* ---------- Filtros de busca ---------- */
+.filtros-busca {
+    background: var(--cinza-claro);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.filtros-busca .form-linha {
+    align-items: end;
+}
+
+.filtros-busca .btn {
+    width: auto;
+    height: 44px;
+}
+
+/* ---------- Detalhes da carona ---------- */
+.detalhes-carona {
+    border: 1px solid var(--cinza-borda);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 24px;
+}
+
+.detalhes-carona .rota-grande {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.detalhes-carona .grid-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.detalhes-carona .grid-info .info {
+    font-size: 0.95rem;
+}
+.detalhes-carona .grid-info .info strong {
+    display: block;
+    color: var(--cinza-texto);
+    font-weight: normal;
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+}
+
+.box-motorista {
+    background: var(--cinza-claro);
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 24px;
+}
+.box-motorista h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* ---------- Tabela de solicitações ---------- */
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-size: 0.95rem;
+}
+.tabela th, .tabela td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--cinza-borda);
+}
+.tabela th {
+    background: var(--cinza-claro);
+    font-weight: bold;
+}
+.tabela tr:hover { background: #FAFBFC; }
+
+.tabela .acoes-coluna {
+    display: flex;
+    gap: 6px;
+}
+
+/* ---------- Abas (solicitações enviadas/recebidas) ---------- */
+.abas {
+    display: flex;
+    gap: 4px;
+    border-bottom: 2px solid var(--cinza-borda);
+    margin-bottom: 24px;
+}
+.abas a {
+    padding: 10px 20px;
+    color: var(--cinza-texto);
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+}
+.abas a.ativa {
+    color: var(--azul-primario);
+    border-bottom-color: var(--azul-primario);
+    text-decoration: none;
+}
+
+/* ---------- Estado vazio ---------- */
+.vazio {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--cinza-texto);
+}
+.vazio p { font-size: 1.05rem; margin-bottom: 16px; }
+
+/* ---------- Utilitários ---------- */
+.text-center { text-align: center; }
+.mt-20 { margin-top: 20px; }
+.mt-30 { margin-top: 30px; }
+.mb-20 { margin-bottom: 20px; }
+.mb-30 { margin-bottom: 30px; }
