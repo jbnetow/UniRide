@@ -126,14 +126,7 @@ uniride/
 
 ## Equipe
 
-- André Ricardo Costa da Silva
 - José Batista Neto
-- Laís Neves Dutra dos Santos
-- Leonardo dos Santos Freire
-- Letícia Sá Oliveira
-- Lucas Viana de Oliveira
-- Lucas Vinícius Silva dos Santos
-- Thamires Anjos Ferreira
 
 **Professor orientador:** Anderson Clayton Garcia Lopes
 
